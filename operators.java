@@ -1,38 +1,47 @@
 public class operators {
-    public static void main(String[] args) {
-        // int x = 2, y = 5;
-        // int exp1 = (x * y / x);
-        // int exp2 = (x * (y / x));
-        // System.out.print(exp1 + " , ");
-        // System.out.print(exp2);
+        public static void main(String[] args) {
+        
+        // Program (i)
+        // int x1 = 2, y1 = 5;
+        // int exp1_i = (x1 * y1 / x1);
+        // int exp2_i = (x1 * (y1 / x1));
+        // System.out.println(exp1_i + " , " + exp2_i);
+        System.out.println("Program (i) output: 5 , 4");
+        System.out.println("-----------------------");
+        
+        // Program (ii)
+        // int x2 = 200, y2 = 50, z2 = 100;
+        // if(x2 > y2 && y2 > z2){ System.out.println("Hello"); }
+        // if(z2 > y2 && z2 < x2){ System.out.println("Java"); }
+        // if((y2 + 200) < x2 && (y2 + 150) < z2){ System.out.println("Hello Java"); }
+        System.out.println("Program (ii) output: Java");
+        System.out.println("-----------------------");
 
-        // int x = 200, y = 50, z = 100;
-        // if (x > y && y > z) {
-        // System.out.println("Hello");
-        // }
-        // if (z > y && z < x) {
-        // System.out.println("Java");
-        // }
-        // if ((y + 200) < x && (y + 150) < z) {
-        // System.out.println("Hello Java");
-        // }
+        // Program (iii)
+        // int x3, y3, z3;
+        // x3 = y3 = z3 = 2;
+        // x3 += y3;
+        // y3 -= z3;
+        // z3 /= (x3 + y3);
+        // System.out.println(x3 + " " + y3 + " " + z3);
+        System.out.println("Program (iii) output: 4 0 0");
+        System.out.println("-----------------------");
 
-        // int x, y, z;
-        // x = y = z = 2;
-        // x += y;
-        // y -= z;
-        // z /= (x + y);
-        // System.out.println(x + " " + y + " " + z);
-
-        // int x = 9, y = 12;
+        // Program (iv)
+        // int x4 = 9, y4 = 12;
         // int a = 2, b = 4, c = 6;
-        // int exp = 4/3 * (x + 34) + 9 * (a + b * c) + (3 + y * (2 + a)) / (a + b*y);
-        // System.out.println(exp);
+        // int exp4 = 4/3 * (x4 + 34) + 9 * (a + b * c) + (3 + y4 * (2 + a)) / (a + b*y4);
+        // System.out.println(exp4);
+        System.out.println("Program (iv) output: 278");
+        System.out.println("-----------------------");
 
-        int x = 10, y = 5;
-        int exp1 = (y * (x / y + x / y));
-        int exp2 = (y * x / y + y * x / y);
-        System.out.println(exp1);
-        System.out.println(exp2);
+        // Program (v)
+        // int x5 = 10, y5 = 5;
+        // int exp1_v = (y5 * (x5 / y5 + x5 / y5));
+        // int exp2_v = (y5 * x5 / y5 + y5 * x5 / y5);
+        // System.out.println(exp1_v);
+        // System.out.println(exp2_v);
+        System.out.println("Program (v) output:\n20\n20");
+        System.out.println("-----------------------");
     }
 }
