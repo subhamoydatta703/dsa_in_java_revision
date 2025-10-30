@@ -60,6 +60,17 @@ public class conditional_stat {
 
         }
     
+        static void leapYear(int y){
+            if(y%400==0 ){
+                System.out.print("Leap Year");
+            }else if(y%100==0){
+                System.out.print("Not  Leap Year");
+            }else if(y%4==0){
+                System.out.print("Leap Year");
+            }else{
+                System.out.print("Not Leap Year");
+            }
+        }
 
     public static void main(String[] args) {
         // Scanner sc = new Scanner(System.in);
@@ -84,11 +95,12 @@ public class conditional_stat {
 
         // feverCheck(96);
         // weekCheck(4);
-        int a=63,b=36;
-        boolean x= (a<b)?true:false;
-        int y= (a>b)?a:b;
-        System.out.println(x);
-        System.out.println(y);
+        // int a=63,b=36;
+        // boolean x= (a<b)?true:false;
+        // int y= (a>b)?a:b;
+        // System.out.println(x);
+        // System.out.println(y);
 
+        leapYear(2017);
     }
 }
