@@ -6,6 +6,13 @@ public class loops {
         }
         return fac(n-1)*n;
     }
+    static void table(int n){
+        System.err.println("Table of "+n+" :");
+        for(int i=1; i<=10; i++){
+            System.out.print(n+ " x "+ i+" = "+ n*i);
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         // for (int i = 0; i < 5; i++) {
         // System.out.println("Hello");
@@ -29,7 +36,8 @@ public class loops {
         // System.out.print("Sum of evens: " + sumEven);
         // System.out.println();
         // System.out.print("Sum of odds: " + sumOdd);
-        System.out.print(fac(4));
+        // System.out.print(fac(4));
+        table(5);
     
     }
 }
