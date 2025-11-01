@@ -25,6 +25,22 @@ public class functions_methods {
         return fact;
     }
 
+    // prime number check
+
+    static void primeNum(int n){
+        if(n<=1){
+            System.out.print("Not Prime");
+            return;
+        }
+        for(int i =2; i<n; i++){
+            if(n%i==0){
+                System.out.print(" Not Prime");
+                return;
+            }
+        }
+        System.out.print("Prime");
+    }
+
     // Binomial coefficient
 
     static int binCoeff(int n, int r){
@@ -40,7 +56,8 @@ public class functions_methods {
         // greet();
         // prod(2,3);
         // System.out.print(fac(4));
-        System.out.print(binCoeff(5, 2));
+        // System.out.print(binCoeff(5, 2));
+        primeNum(7);
         
     }
 }
