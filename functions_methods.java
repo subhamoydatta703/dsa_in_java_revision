@@ -25,11 +25,22 @@ public class functions_methods {
         return fact;
     }
 
+    // Binomial coefficient
+
+    static int binCoeff(int n, int r){
+        int facN= fac(n);
+        int facR= fac(r);
+        int x = (n-r);
+        int down = facR * fac(x);
+        return facN/down;
+    }
+
     public static void main(String[] args) {
         // System.out.println("This is main()");
         // greet();
         // prod(2,3);
         // System.out.print(fac(4));
+        System.out.print(binCoeff(5, 2));
         
     }
 }
