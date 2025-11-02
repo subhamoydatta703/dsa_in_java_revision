@@ -1,3 +1,4 @@
+import java.util.*;
 public class functions_methods {
     // call stack
 
@@ -42,6 +43,20 @@ public class functions_methods {
         System.out.print("Prime");
     }
 
+    // optimized prime number check
+
+    static boolean optPrime(int n){
+        if(n==2){
+            return true;
+        }
+        for(int i =2; i<=Math.sqrt(n); i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+
     // Binomial coefficient
 
     static int binCoeff(int n, int r) {
@@ -75,10 +90,12 @@ public class functions_methods {
         // prod(2,3);
         // System.out.print(fac(4));
         // System.out.print(binCoeff(5, 2));
-        // primeNum(7);
-        System.out.println("Sum of 2 ints: " + add(5, 10));
-        System.out.println("Sum of 3 ints: " + add(5, 10, 15));
-        System.out.println("Sum of 2 doubles: " + add(5.5, 10.2));
+        // // primeNum(7);
+        // System.out.println("Sum of 2 ints: " + add(5, 10));
+        // System.out.println("Sum of 3 ints: " + add(5, 10, 15));
+        // System.out.println("Sum of 2 doubles: " + add(5.5, 10.2));
+
+        System.out.print(optPrime(3));
 
     }
 }
