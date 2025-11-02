@@ -103,6 +103,21 @@ static void primeRan(int n){
     }
 }
 
+// binary to decimal
+
+static void btd(int bin){
+    int pow =0;
+    int dn=0;
+    while(bin>0){
+        int ld = bin%10;
+        dn = dn +(ld*(int)Math.pow(2, pow));
+        pow++;
+        bin=bin/10;
+    }
+    System.out.print(dn);
+
+}
+
     public static void main(String[] args) {
         // System.out.println("This is main()");
         // greet();
@@ -113,8 +128,10 @@ static void primeRan(int n){
         // System.out.println("Sum of 2 ints: " + add(5, 10));
         // System.out.println("Sum of 3 ints: " + add(5, 10, 15));
         // System.out.println("Sum of 2 doubles: " + add(5.5, 10.2));
-
-        primeRan(10);
+        // String name = "Subhamoy";
+        // System.out.println(name.charAt(0)); 
+        // primeRan(10);
+        btd(1011);
 
     }
 }
