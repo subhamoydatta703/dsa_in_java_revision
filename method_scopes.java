@@ -20,7 +20,7 @@ static void num(){
             // because we can't access it outside of these curly brackets (block)
         }
 
-        System.out.print(k+10);
+        // System.out.print(k+10);
 
     }
     
