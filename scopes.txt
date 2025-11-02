@@ -1,0 +1,64 @@
+1. Method Scope
+
+Definition:
+Variables declared inside a method can be accessed only within that method.
+They are created when the method is called and destroyed when it ends.
+
+✅ Example:
+
+public class MethodScopeExample {
+    public static void main(String[] args) {
+        greet();  // calling the method
+        // System.out.println(message); ❌ Error: message not visible here
+    }
+
+    static void greet() {
+        String message = "Hello from greet()!"; // variable declared inside method
+        System.out.println(message); // ✅ Works fine
+    }
+}
+
+
+🟩 Explanation:
+
+The variable message is declared inside the method greet().
+
+It’s accessible only inside greet().
+
+Once the method ends, message is destroyed.
+
+ 2. Block Scope
+
+Definition:
+Variables declared inside any block { ... } — like if, for, or while — are accessible only inside that block.
+
+✅ Example:
+
+public class BlockScopeExample {
+    public static void main(String[] args) {
+        int x = 10;
+
+        if (x > 5) {
+            int y = 20; // variable inside if-block
+            System.out.println("x + y = " + (x + y)); // ✅ Works fine
+        }
+
+        // System.out.println(y); ❌ Error: y is not visible outside the block
+    }
+}
+
+
+🟩 Explanation:
+
+Variable y is declared inside the if block.
+
+It cannot be used outside the block {} where it’s declared.
+
+The lifetime of y ends when the block ends.
+
+⚖️ Difference Summary
+Feature	Method Scope	Block Scope
+Declared Inside	A method	A block (if, for, etc.)
+Lifetime	Exists during method execution	Exists during block execution
+Accessible From	Only inside that method	Only inside that block
+Example	String msg = "Hi"; inside a method	int i = 0; inside a for loop
