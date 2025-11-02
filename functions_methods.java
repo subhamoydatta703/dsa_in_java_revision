@@ -45,17 +45,26 @@ public class functions_methods {
 
     // optimized prime number check
 
-    static boolean optPrime(int n){
-        if(n==2){
-            return true;
-        }
-        for(int i =2; i<=Math.sqrt(n); i++){
-            if(n%i==0){
-                return false;
-            }
-        }
-        return true;
+static boolean optPrime(int n) {
+    if (n < 2) {
+        return false; // 0 and 1 are not prime
     }
+    if (n == 2) {
+        return true;  // 2 is prime
+    }
+    // No even number > 2 is prime
+    if (n % 2 == 0) {
+        return false;
+    }
+
+    // Check divisibility from 3 up to sqrt(n)
+    for (int i = 3; i <= Math.sqrt(n); i += 2) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
 
     // Binomial coefficient
 
