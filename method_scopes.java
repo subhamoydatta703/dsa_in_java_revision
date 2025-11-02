@@ -16,11 +16,10 @@ static void num(){
     public static void main(String[] args) {
         {
             int k = 15;
-            // Here, variable k is block scope
-            // because we can't access it outside of these curly brackets (block)
+            // Here, variable k is block scope because we can't access it outside of these curly brackets (block)
         }
 
-        // System.out.print(k+10);
+        
 
     }
     
