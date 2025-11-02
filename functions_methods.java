@@ -118,6 +118,18 @@ static void btd(int bin){
 
 }
 
+static void dtb(int n){
+    int pow =0;
+    int b =0;
+    while(n>0){
+        int r = n%2;
+        b = b + (r*(int)Math.pow(10, pow));
+        pow++;
+        n=n/2;
+
+    }
+    System.out.print(b);
+}
     public static void main(String[] args) {
         // System.out.println("This is main()");
         // greet();
@@ -131,7 +143,7 @@ static void btd(int bin){
         // String name = "Subhamoy";
         // System.out.println(name.charAt(0)); 
         // primeRan(10);
-        btd(1011);
-
+        // btd(1011);
+        dtb(11);
     }
 }
