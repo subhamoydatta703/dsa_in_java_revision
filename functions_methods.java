@@ -92,6 +92,16 @@ static boolean optPrime(int n) {
     static double add(double a, double b) {
         return a + b;
     }
+    
+// primes in range 2 to 10
+static void primeRan(int n){
+    System.out.print("Prime numbers from 2 to "+ n+ " are: ");
+    for(int i =2; i<=n; i++ ){
+        if(optPrime(i)){
+            System.out.print(+i+" ");
+        }
+    }
+}
 
     public static void main(String[] args) {
         // System.out.println("This is main()");
@@ -104,7 +114,7 @@ static boolean optPrime(int n) {
         // System.out.println("Sum of 3 ints: " + add(5, 10, 15));
         // System.out.println("Sum of 2 doubles: " + add(5.5, 10.2));
 
-        System.out.print(optPrime(3));
+        primeRan(10);
 
     }
 }
