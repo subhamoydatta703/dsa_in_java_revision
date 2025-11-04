@@ -38,9 +38,23 @@ public class advanced_pattern {
             System.out.println();
         }
     }
+
+    // floyd's triangle
+
+    static void floydTriangle(int n){
+        int x = 1;
+        for(int i =1; i<=n; i++){
+            for(int j = 1; j<=i; j++){
+                System.out.print(x +" ");
+                x++;
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         // hollowRectangle(4, 5);
         // invertedHollowPyramid(4);
-        invHalfPyrNum(5);
+        // invHalfPyrNum(5);
+        floydTriangle(5);
     }
 }
