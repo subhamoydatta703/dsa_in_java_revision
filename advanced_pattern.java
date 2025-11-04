@@ -1,19 +1,37 @@
 public class advanced_pattern {
 
-    static void hollow(int r, int c){
-        for(int i =1; i<=r; i++){
-            for(int j =1; j<=c; j++){
-                if(i==1 || i==r || j ==1  || j == c){
+    // hollow rectangle
+    static void hollowRectangle(int r, int c) {
+        for (int i = 1; i <= r; i++) {
+            for (int j = 1; j <= c; j++) {
+                if (i == 1 || i == r || j == 1 || j == c) {
                     System.out.print("*");
-                }else{
+                } else {
                     System.out.print(" ");
                 }
             }
             System.out.println();
         }
-        
+
     }
+
+    // inverted hollow pyramid
+    static void invertedHollowPyramid(int n) {
+        for (int i = 1; i <= n; i++) {
+            // spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
-        hollow(4, 5);
+        // hollowRectangle(4, 5);
+        invertedHollowPyramid(4);
     }
 }
