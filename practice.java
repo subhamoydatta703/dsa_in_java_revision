@@ -9,6 +9,10 @@ static float sum(float x, float y){
     return x+y;
 }
 
+static void avg(float a, float b, float c){
+    float AVG = (a+b+c)/3;
+    System.out.print(AVG);
+}
 // Reverse string:
     static void reverse(String str) {
         String rev = "";
@@ -19,10 +23,11 @@ static float sum(float x, float y){
     }
     public static void main(String[] args) {
         
-        System.out.println(sum(6, 4));
-        System.out.println(sum(3.33f, 5.55f));
+        // System.out.println(sum(6, 4));
+        // System.out.println(sum(3.33f, 5.55f));
 
-        reverse("JAVA");
+        // reverse("JAVA");
+        avg(3, 5, 4);
 
     }
 }
