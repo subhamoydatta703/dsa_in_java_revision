@@ -21,13 +21,22 @@ static void avg(float a, float b, float c){
         }
         System.out.print(rev);
     }
+
+    static boolean isEven(int x){
+        if(x%2==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
     public static void main(String[] args) {
         
         // System.out.println(sum(6, 4));
         // System.out.println(sum(3.33f, 5.55f));
 
         // reverse("JAVA");
-        avg(3, 5, 4);
+        // avg(3, 5, 4);
+        System.out.print(isEven(5));
 
     }
 }
