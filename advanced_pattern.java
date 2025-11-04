@@ -51,10 +51,44 @@ public class advanced_pattern {
             System.out.println();
         }
     }
+
+    // 0-11 triangle
+    // method 1
+
+    static void bin(int n){
+        for(int i =1; i<=n; i++){
+            for(int j =1; j<=i; j++){
+                if((i%2==0 && j%2!=0)||(i%2!=0 && j%2==0)){
+                    System.out.print(0+" ");
+                }else{
+                    System.out.print(1+" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    // method 2
+
+    static void binTriangle(int n) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            if ((i + j) % 2 == 0) {
+                System.out.print(1+" ");
+            } else {
+                System.out.print(0+" ");
+            }
+        }
+        System.out.println();
+    }
+}
+
     public static void main(String[] args) {
         // hollowRectangle(4, 5);
         // invertedHollowPyramid(4);
         // invHalfPyrNum(5);
-        floydTriangle(5);
+        // floydTriangle(5);
+        bin(5);
+        binTriangle(5);
     }
 }
