@@ -1,8 +1,8 @@
 public class practice {
     // Method overloading
 
-    static int sum(int x, int y) {
-        return x + y;
+    static int sum(int x, int y, int z) {
+        return x + y + z;
     }
 
     static float sum(float x, float y) {
@@ -54,7 +54,9 @@ public class practice {
 
         // reverse("JAVA");
         // avg(3, 5, 4);
-        palindrome(121);
+        // palindrome(121);
+        System.out.print(sum(5, 7, 3));
+
 
     }
 }

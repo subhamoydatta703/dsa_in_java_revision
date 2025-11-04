@@ -1,0 +1,36 @@
+🧮 Common Math Functions in Java
+✅ 1. Basic Operations
+Function	Description	Example
+Math.abs(x)	Absolute value (removes negative sign)	Math.abs(-5) → 5
+Math.max(a, b)	Larger of two numbers	Math.max(10, 20) → 20
+Math.min(a, b)	Smaller of two numbers	Math.min(10, 20) → 10
+Math.pow(a, b)	a raised to power b	Math.pow(2, 3) → 8.0
+Math.sqrt(x)	Square root	Math.sqrt(16) → 4.0
+✅ 2. Rounding Functions
+Function	Description	Example
+Math.round(x)	Rounds to nearest integer	Math.round(3.6) → 4
+Math.ceil(x)	Rounds up to next integer	Math.ceil(3.1) → 4.0
+Math.floor(x)	Rounds down to previous integer	Math.floor(3.9) → 3.0
+Math.rint(x)	Rounds to nearest integer (returns double)	Math.rint(3.5) → 4.0
+✅ 3. Trigonometric Functions
+Function	Description	Example
+Math.sin(x)	Sine of angle (in radians)	Math.sin(Math.PI/2) → 1.0
+Math.cos(x)	Cosine of angle	Math.cos(0) → 1.0
+Math.tan(x)	Tangent of angle	Math.tan(Math.PI/4) → 1.0
+Math.toRadians(deg)	Convert degrees → radians	Math.toRadians(180) → 3.14159
+Math.toDegrees(rad)	Convert radians → degrees	Math.toDegrees(Math.PI) → 180.0
+✅ 4. Exponential and Logarithmic
+Function	Description	Example
+Math.exp(x)	e^x (exponential)	Math.exp(1) → 2.718...
+Math.log(x)	Natural log (base e)	Math.log(Math.E) → 1.0
+Math.log10(x)	Logarithm base 10	Math.log10(100) → 2.0
+✅ 5. Random Numbers
+Function	Description	Example
+Math.random()	Returns random number between 0.0 and 1.0	e.g. 0.345
+(int)(Math.random() * 10)	Random integer 0–9	
+✅ 6. Other Useful Functions
+Function	Description	Example
+Math.cbrt(x)	Cube root	Math.cbrt(27) → 3.0
+Math.hypot(a, b)	√(a² + b²)	Math.hypot(3, 4) → 5.0
+Math.signum(x)	Returns sign (-1, 0, or 1)	Math.signum(-5) → -1.0
+✅ Example Code:
