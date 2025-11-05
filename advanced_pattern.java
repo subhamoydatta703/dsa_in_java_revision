@@ -88,7 +88,7 @@ public class advanced_pattern {
         // invertedHollowPyramid(4);
         // invHalfPyrNum(5);
         // floydTriangle(5);
-        bin(5);
-        binTriangle(5);
+        // bin(5);
+        // binTriangle(5);
     }
 }
