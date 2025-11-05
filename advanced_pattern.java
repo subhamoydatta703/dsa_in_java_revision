@@ -123,6 +123,20 @@ static void butterfly(int n){
 
 }
 
+static void rhombos(int n){
+    for(int i=1; i<=n; i++){
+        // space
+        for(int j =1; j<=n-i; j++){
+            System.out.print(" ");
+        }
+        // star
+        for(int j=1; j<=n; j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}
+
     public static void main(String[] args) {
         // hollowRectangle(4, 5);
         // invertedHollowPyramid(4);
@@ -130,6 +144,7 @@ static void butterfly(int n){
         // floydTriangle(5);
         // bin(5);
         // binTriangle(5);
-        butterfly(5);
+        // butterfly(5);
+        rhombos(5);
     }
 }
