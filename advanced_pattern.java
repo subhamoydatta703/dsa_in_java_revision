@@ -83,6 +83,46 @@ public class advanced_pattern {
     }
 }
 
+// butterfly pattern
+
+static void butterfly(int n){
+    for(int i =1; i<=n; i++){
+        // star
+        for(int j =1; j<=i; j++){
+            System.out.print("*");
+        }
+        // space
+        for(int j =1 ;j<=2*(n-i); j++){
+            System.out.print(" ");
+        }
+        // star
+           for(int j =1; j<=i; j++){
+            System.out.print("*");
+        }
+        System.out.println();
+
+    }
+// System.out.println();
+    // inverter case
+    for(int i =n; i>=1; i--){
+        // star
+        for(int j =1; j<=i; j++){
+            System.out.print("*");
+        }
+        // space
+        for(int j =1 ;j<=2*(n-i); j++){
+            System.out.print(" ");
+        }
+        // star
+           for(int j =1; j<=i; j++){
+            System.out.print("*");
+        }
+        System.out.println();
+
+    }
+
+}
+
     public static void main(String[] args) {
         // hollowRectangle(4, 5);
         // invertedHollowPyramid(4);
@@ -90,5 +130,6 @@ public class advanced_pattern {
         // floydTriangle(5);
         // bin(5);
         // binTriangle(5);
+        butterfly(5);
     }
 }
