@@ -55,7 +55,7 @@ public class practice {
         // reverse("JAVA");
         // avg(3, 5, 4);
         // palindrome(121);
-        System.out.print(sum(5, 7, 3));
+        // System.out.print(sum(5, 7, 3));
 
 
     }
