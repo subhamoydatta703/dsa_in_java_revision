@@ -145,6 +145,6 @@ static void rhombos(int n){
         // bin(5);
         // binTriangle(5);
         // butterfly(5);
-        rhombos(5);
+        // rhombos(5);
     }
 }
