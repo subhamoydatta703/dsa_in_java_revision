@@ -46,6 +46,6 @@ public class pattern {
     public static void main(String[] args) {
         // invStar(5);
         // halfPyr(4);
-        charPat(5);
+        // charPat(5);
     }
 }
