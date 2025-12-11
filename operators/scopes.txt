@@ -4,22 +4,22 @@ Definition:
 Variables declared inside a method can be accessed only within that method.
 They are created when the method is called and destroyed when it ends.
 
-✅ Example:
+ Example:
 
 public class MethodScopeExample {
     public static void main(String[] args) {
         greet();  // calling the method
-        // System.out.println(message); ❌ Error: message not visible here
+        // System.out.println(message);  Error: message not visible here
     }
 
     static void greet() {
         String message = "Hello from greet()!"; // variable declared inside method
-        System.out.println(message); // ✅ Works fine
+        System.out.println(message); //  Works fine
     }
 }
 
 
-🟩 Explanation:
+ Explanation:
 
 The variable message is declared inside the method greet().
 
@@ -32,7 +32,7 @@ Once the method ends, message is destroyed.
 Definition:
 Variables declared inside any block { ... } — like if, for, or while — are accessible only inside that block.
 
-✅ Example:
+ Example:
 
 public class BlockScopeExample {
     public static void main(String[] args) {
@@ -48,7 +48,7 @@ public class BlockScopeExample {
 }
 
 
-🟩 Explanation:
+ Explanation:
 
 Variable y is declared inside the if block.
 
@@ -56,7 +56,7 @@ It cannot be used outside the block {} where it’s declared.
 
 The lifetime of y ends when the block ends.
 
-⚖️ Difference Summary
+ Difference Summary
 Feature	Method Scope	Block Scope
 Declared Inside	A method	A block (if, for, etc.)
 Lifetime	Exists during method execution	Exists during block execution

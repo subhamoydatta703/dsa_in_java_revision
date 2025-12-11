@@ -1,3 +1,4 @@
+package type_casting_conversion;
 public class type_casting {
     public static void main(String[] args) {
         // type casting= convert the value of a variuable of one data type to another data type

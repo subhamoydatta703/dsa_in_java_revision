@@ -1,3 +1,4 @@
+package loop_and_pattern;
 public class advanced_pattern {
 
     // hollow rectangle

@@ -1,3 +1,4 @@
+package operators;
 import java.util.Scanner;
 
 public class basic_op {    public static void main(String[] args) {

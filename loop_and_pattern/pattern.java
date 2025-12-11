@@ -1,3 +1,4 @@
+package loop_and_pattern;
 public class pattern {
 
     // star print

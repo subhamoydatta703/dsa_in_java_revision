@@ -1,3 +1,4 @@
+package type_casting_conversion;
 public class trype_promotion {
       public static void main(String[] args) {
         // Type promotion happens automatically when smaller data types

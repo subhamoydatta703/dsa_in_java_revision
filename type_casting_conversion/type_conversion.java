@@ -1,3 +1,4 @@
+package type_casting_conversion;
 public class type_conversion {
     public static void main(String[] args) {
         // size= destination type > source type

@@ -1,3 +1,4 @@
+package conditional_statements;
 import java.util.*;
 
 public class conditional_stat {
