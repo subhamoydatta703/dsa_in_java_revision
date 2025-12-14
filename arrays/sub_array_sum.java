@@ -9,7 +9,7 @@ public class sub_array_sum {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr.length; j++) {
                 currSum = 0;
-                for (int k = i; k < j; k++) {
+                for (int k = i; k <= j; k++) {
 
                     currSum += arr[k];
 
