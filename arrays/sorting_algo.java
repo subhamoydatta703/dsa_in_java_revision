@@ -5,7 +5,6 @@ import java.util.*;
 public class sorting_algo {
 
     // bubble sort
-
     static int[] bubbleSort(int arr[]) {
         int n = arr.length;
         for (int i = 0; i <= (n - 2); i++) {
