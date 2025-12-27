@@ -22,18 +22,32 @@ public class sorting_algo {
     }
     // selection sort
 
-    static int[] selectionSort(int arr[]){
+    static int[] selectionSort(int arr[]) {
         int n = arr.length;
-        for(int i=0; i<n-1; i++){
+        for (int i = 0; i < n - 1; i++) {
             int minValuePos = i;
-            for(int j = i+1; j<n; j++){
-                if(arr[minValuePos]> arr[j]){
+            for (int j = i + 1; j < n; j++) {
+                if (arr[minValuePos] > arr[j]) {
                     minValuePos = j;
                 }
             }
             int temp = arr[minValuePos];
             arr[minValuePos] = arr[i];
-            arr[i]= temp;
+            arr[i] = temp;
+        }
+        return arr;
+    }
+
+    // insertion sort
+    static int[] insertionSort(int arr[]) {
+        int n = arr.length;
+        for (int i = 1; i < n; i++) {
+            int curr = arr[i], prev = i - 1;
+            while (prev >= 0 && arr[prev] > curr) {
+                arr[prev + 1] = arr[prev];
+                prev--;
+            }
+            arr[prev + 1] = curr;
         }
         return arr;
     }
@@ -41,6 +55,7 @@ public class sorting_algo {
     public static void main(String[] args) {
         int arr[] = { 5, 7, 3, 1, 2 };
         // System.out.print(Arrays.toString(bubbleSort(arr)));
-        System.out.print(Arrays.toString(selectionSort(arr)));
+        // System.out.print(Arrays.toString(selectionSort(arr)));
+        System.out.print(Arrays.toString(insertionSort(arr)));
     }
 }
