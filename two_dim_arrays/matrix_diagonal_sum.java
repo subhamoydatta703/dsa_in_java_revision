@@ -29,6 +29,22 @@ public class matrix_diagonal_sum {
         return pd + sd;
     }
 
+    // another approach(also optimized)
+    static int digSum(int mat[][]) {
+        int sum = 0, n = mat.length;
+
+        for (int i = 0; i < n; i++) {
+            sum += mat[i][i];
+            sum += mat[i][mat.length - i - 1];
+        }
+        if (n % 2 != 0) {
+            sum -= mat[n / 2][n / 2];
+        }
+
+        return sum;
+
+    }
+
     public static void main(String[] args) {
         int matrix[][] = {
                 { 1, 2, 3 },
@@ -36,7 +52,8 @@ public class matrix_diagonal_sum {
                 { 9, 10, 11 }
         };
         // System.out.print(diag_sum(matrix));
-        System.out.print(diagonalSum(matrix));
+        // System.out.print(diagonalSum(matrix));
+        System.out.print(digSum(matrix));
 
     }
 }
