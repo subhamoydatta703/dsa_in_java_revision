@@ -1,6 +1,36 @@
 package bit_manipulation;
 
 public class bitwise_operations {
+    // update the ith bit using normal conditional statements
+    static void updateBit(int n, int i) {
+
+        if ((n & (1 << i)) == 0) {
+            n = n | (1 << i);
+        } else {
+            n = n & ~(1 << i);
+        }
+
+        System.out.println(n);
+
+    }
+
+    // update the ith bit using XOR operator(preferred)
+    static void updateBitByXOR(int n, int i) {
+
+        n = n ^ (1 << i);
+
+        System.out.println(n);
+    }
+
+    // clear the last i bits
+    static void clearLastBit(int n, int i) {
+        // formula to clear the last i bits -> n = n & (~((1 << i) - 1))
+        n = n & (~((1 << i) - 1));
+
+        System.out.println(n);
+
+    }
+
     public static void main(String[] args) {
         // get the ith bit
         // steps to get the ith bit of x -> (x & (1 << i))
@@ -19,7 +49,7 @@ public class bitwise_operations {
         // int i = 4;
         // int result = (n | (1 << i));
         // System.out.println("Result: " + result);
-        //  if ((result & (1 << i)) != 0) {
+        // if ((result & (1 << i)) != 0) {
         // System.out.print("ith bit is: " + 1);
         // } else {
         // System.out.print("ith bit is: " + 0);
@@ -27,15 +57,17 @@ public class bitwise_operations {
         // clear the ith bit
         // steps to clear the ith bit of x -> (x & (~(1 << i)))
         // For x = 18 and i = 3
-        int n = 18;
-        int i = 3;
-        int result = (n & (~(1 << i)));
-        System.out.println("Result: " + result);
-         if ((result & (1 << i)) != 0) {
-        System.out.print("ith bit is: " + 1);
-        } else {
-        System.out.print("ith bit is: " + 0);
-        }
-
+        // int n = 18;
+        // int i = 3;
+        // int result = (n & (~(1 << i)));
+        // System.out.println("Result: " + result);
+        // if ((result & (1 << i)) != 0) {
+        // System.out.print("ith bit is: " + 1);
+        // } else {
+        // System.out.print("ith bit is: " + 0);
+        // }
+        // updateBit(10, 2);
+        // updateBitByXOR(12, 4);
+        clearLastBit(12, 3);
     }
 }
