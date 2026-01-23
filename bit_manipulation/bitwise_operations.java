@@ -31,6 +31,19 @@ public class bitwise_operations {
 
     }
 
+    // clear range of bits
+    static void clearRangeBits(int n, int i, int j) {
+        int a = ((~0) << (j + 1));
+        int b = ((1 << i) - 1);
+        int result = (n & (a | b));
+        System.out.print(result);
+    }
+
+    // check number is power of 2 or not
+    static boolean isPowTwo(int n) {
+        return (n & (n - 1))==0;
+    }
+
     public static void main(String[] args) {
         // get the ith bit
         // steps to get the ith bit of x -> (x & (1 << i))
@@ -68,6 +81,9 @@ public class bitwise_operations {
         // }
         // updateBit(10, 2);
         // updateBitByXOR(12, 4);
-        clearLastBit(12, 3);
+        // clearLastBit(12, 3);
+        // clearRangeBits(15, 2, 4);
+        System.out.println(isPowTwo(16));
+
     }
 }
