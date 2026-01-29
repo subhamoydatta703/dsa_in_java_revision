@@ -3,8 +3,8 @@ public class OOPS {
         Pen p1 = new Pen();
         p1.setColor("orange");
         p1.setPrice(4.5f);
-        // System.out.println(p1.color);
-        // System.out.println(p1.price);
+        System.out.println(p1.getColor());
+        System.out.println(p1.getPrice());
         BankAccount user1 = new BankAccount();
         user1.username = "Rahul";
         System.out.println(user1.username);
@@ -15,15 +15,23 @@ public class OOPS {
 
 // Concept of class and objects
 class Pen {
-    String color;
-    float price;
+    private String color;
+    private float price;
 
-    void setColor(String newcolor) {
-        color = newcolor;
+    void setColor(String color) {
+        this.color = color;
     }
 
-    void setPrice(float newprice) {
-        price = newprice;
+    String getColor() {
+        return this.color;
+    }
+
+    void setPrice(float price) {
+        this.price = price;
+    }
+
+    float getPrice() {
+        return this.price;
     }
 
 }
