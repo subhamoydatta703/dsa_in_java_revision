@@ -6,7 +6,7 @@
 *.iml
 *.ipr
 *.iws
-
+*.vscode
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
