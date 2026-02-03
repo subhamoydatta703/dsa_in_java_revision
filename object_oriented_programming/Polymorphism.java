@@ -1,4 +1,5 @@
 package object_oriented_programming;
+
 public class Polymorphism {
     public static void main(String[] args) {
         // method overloading
@@ -8,7 +9,7 @@ public class Polymorphism {
         // System.out.println(calc.sum(1, 2, 3));
 
         // method overriding
-        Dog d1 = new Dog();
+        PolyDog d1 = new PolyDog();
         d1.speak();
 
     }
@@ -30,13 +31,13 @@ class Calculator {
 }
 
 // method overriding
-class Animal {
+class PolyAnimal {
     void speak() {
         System.out.println("Animal speaks");
     }
 }
 
-class Dog extends Animal {
+class PolyDog extends PolyAnimal {
     void speak() {
         System.out.println("Dog barks");
     }

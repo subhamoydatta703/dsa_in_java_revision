@@ -1,7 +1,5 @@
 package arrays;
 
-import java.util.*;
-
 public class linear_search {
 
     // linear search by using value
@@ -21,13 +19,7 @@ public class linear_search {
             System.out.print("Index should be within 0 to " + (arr.length - 1));
             return;
         }
-        for (int i = 0; i < arr.length; i++) {
-            if (i == y) {
-                System.out.print("Value is: " + arr[i] + " at index: " + y);
-                return;
-            }
-
-        }
+        System.out.print("Value is: " + arr[y] + " at index: " + y);
     }
 
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 package functions_methods;
-import java.util.*;
+
 public class functions_methods {
     // call stack
 
@@ -46,26 +46,26 @@ public class functions_methods {
 
     // optimized prime number check
 
-static boolean optPrime(int n) {
-    if (n < 2) {
-        return false; // 0 and 1 are not prime
-    }
-    if (n == 2) {
-        return true;  // 2 is prime
-    }
-    // No even number > 2 is prime
-    if (n % 2 == 0) {
-        return false;
-    }
-
-    // Check divisibility from 3 up to sqrt(n)
-    for (int i = 3; i <= Math.sqrt(n); i += 2) {
-        if (n % i == 0) {
+    static boolean optPrime(int n) {
+        if (n < 2) {
+            return false; // 0 and 1 are not prime
+        }
+        if (n == 2) {
+            return true; // 2 is prime
+        }
+        // No even number > 2 is prime
+        if (n % 2 == 0) {
             return false;
         }
+
+        // Check divisibility from 3 up to sqrt(n)
+        for (int i = 3; i <= Math.sqrt(n); i += 2) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
-    return true;
-}
 
     // Binomial coefficient
 
@@ -93,44 +93,45 @@ static boolean optPrime(int n) {
     static double add(double a, double b) {
         return a + b;
     }
-    
-// primes in range 2 to 10
-static void primeRan(int n){
-    System.out.print("Prime numbers from 2 to "+ n+ " are: ");
-    for(int i =2; i<=n; i++ ){
-        if(optPrime(i)){
-            System.out.print(+i+" ");
+
+    // primes in range 2 to 10
+    static void primeRan(int n) {
+        System.out.print("Prime numbers from 2 to " + n + " are: ");
+        for (int i = 2; i <= n; i++) {
+            if (optPrime(i)) {
+                System.out.print(+i + " ");
+            }
         }
     }
-}
 
-// binary to decimal
+    // binary to decimal
 
-static void btd(int bin){
-    int pow =0;
-    int dn=0;
-    while(bin>0){
-        int ld = bin%10;
-        dn = dn +(ld*(int)Math.pow(2, pow));
-        pow++;
-        bin=bin/10;
-    }
-    System.out.print(dn);
-
-}
-
-static void dtb(int n){
-    int pow =0;
-    int b =0;
-    while(n>0){
-        int r = n%2;
-        b = b + (r*(int)Math.pow(10, pow));
-        pow++;
-        n=n/2;
+    static void btd(int bin) {
+        int pow = 0;
+        int dn = 0;
+        while (bin > 0) {
+            int ld = bin % 10;
+            dn = dn + (ld * (int) Math.pow(2, pow));
+            pow++;
+            bin = bin / 10;
+        }
+        System.out.print(dn);
 
     }
-    System.out.print(b);
-}
+
+    static void dtb(int n) {
+        int pow = 0;
+        int b = 0;
+        while (n > 0) {
+            int r = n % 2;
+            b = b + (r * (int) Math.pow(10, pow));
+            pow++;
+            n = n / 2;
+
+        }
+        System.out.print(b);
+    }
+
     public static void main(String[] args) {
         // System.out.println("This is main()");
         // greet();
@@ -142,7 +143,7 @@ static void dtb(int n){
         // System.out.println("Sum of 3 ints: " + add(5, 10, 15));
         // System.out.println("Sum of 2 doubles: " + add(5.5, 10.2));
         // String name = "Subhamoy";
-        // System.out.println(name.charAt(0)); 
+        // System.out.println(name.charAt(0));
         // primeRan(10);
         // btd(1011);
         dtb(11);

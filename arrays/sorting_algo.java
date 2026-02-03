@@ -1,7 +1,5 @@
 package arrays;
 
-import java.util.*;
-
 public class sorting_algo {
 
     // display array
@@ -102,7 +100,7 @@ public class sorting_algo {
         // System.out.print(Arrays.toString(bubbleSort(arr)));
         // System.out.print(Arrays.toString(selectionSort(arr)));
         // System.out.print(Arrays.toString(insertionSort(arr)));
-        quickSort(arr, 0, 4);
+        quickSort(arr, 0, arr.length - 1);
         displayArray(arr);
     }
 }

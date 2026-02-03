@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class string_intro {
     public static void main(String[] args) {
         // array of characters
-        int[] ch = { 'a', 'b', 'c', 'd' };
+        char[] ch = { 'a', 'b', 'c', 'd' };
         // string declare(method 1)
         String str1 = "abcdef";
         // string declare(method 2: with new keyword)
@@ -13,7 +13,7 @@ public class string_intro {
         // String is a built-in class in java for Strings
         // Strings are immutable(can not modify the original string)
 
-        // USing input
+        // Using input
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your name: ");
         // next() -> not allows words/letters after space

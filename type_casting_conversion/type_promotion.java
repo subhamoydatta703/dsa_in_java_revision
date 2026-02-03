@@ -1,36 +1,37 @@
 package type_casting_conversion;
-public class trype_promotion {
-      public static void main(String[] args) {
-        // Type promotion happens automatically when smaller data types
-        // are used in expressions with larger data types.
 
-        byte a = 10;
-        byte b = 20;
+public class type_promotion {
+  public static void main(String[] args) {
+    // Type promotion happens automatically when smaller data types
+    // are used in expressions with larger data types.
 
-        // Here, both 'a' and 'b' are bytes.
-        // But during the expression (a + b),
-        // Java promotes both 'a' and 'b' to int before performing addition.
-        int c = a + b;
+    byte a = 10;
+    byte b = 20;
 
-        System.out.println("Result (a + b): " + c); // Output: 30
+    // Here, both 'a' and 'b' are bytes.
+    // But during the expression (a + b),
+    // Java promotes both 'a' and 'b' to int before performing addition.
+    int c = a + b;
 
-        // Another example: mixing int and float
-        int x = 5;
-        float y = 6.5f;
+    System.out.println("Result (a + b): " + c); // Output: 30
 
-        // Here, x (int) is promoted to float automatically
-        // before performing the addition.
-        float z = x + y;
+    // Another example: mixing int and float
+    int x = 5;
+    float y = 6.5f;
 
-        System.out.println("Result (x + y): " + z); // Output: 11.5
+    // Here, x (int) is promoted to float automatically
+    // before performing the addition.
+    float z = x + y;
 
-        // Example with multiple promotions
-        byte p = 5;
-        char q = 'A'; // 'A' = 65 in ASCII
+    System.out.println("Result (x + y): " + z); // Output: 11.5
 
-        // Both p (byte) and q (char) are promoted to int
-        int r = p + q;
+    // Example with multiple promotions
+    byte p = 5;
+    char q = 'A'; // 'A' = 65 in ASCII
 
-        System.out.println("Result (p + q): " + r); // Output: 70
-    }
+    // Both p (byte) and q (char) are promoted to int
+    int r = p + q;
+
+    System.out.println("Result (p + q): " + r); // Output: 70
+  }
 }

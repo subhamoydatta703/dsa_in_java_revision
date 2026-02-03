@@ -25,7 +25,7 @@ public class string_comparison {
             System.out.print("Value of s1 is equal to s2");
 
         } else {
-            System.out.print("Value of s1 is equal to s2");
+            System.out.print("Value of s1 is NOT equal to s2");
         }
 
         System.out.println();
@@ -34,7 +34,7 @@ public class string_comparison {
             System.out.print("Value of s1 is equal to s3");
 
         } else {
-            System.out.print("Value of s1 is equal to s3");
+            System.out.print("Value of s1 is NOT equal to s3");
         }
 
     }

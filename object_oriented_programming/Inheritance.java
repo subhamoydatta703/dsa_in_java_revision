@@ -1,3 +1,4 @@
+package object_oriented_programming;
 public class Inheritance {
     public static void main(String[] args) {
         // single inheritance

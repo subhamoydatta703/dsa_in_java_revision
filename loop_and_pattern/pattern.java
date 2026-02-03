@@ -165,7 +165,7 @@ public class pattern {
 
     // diamond pattern
 
-    static void duamondPattern(int n){
+    static void diamondPattern(int n){
         // lines
         for(int i =1; i<=n; i++){
             // space
@@ -197,6 +197,6 @@ public class pattern {
     public static void main(String[] args) {
         // solidRhombus(5);
         // hollowRhombus(5);
-        duamondPattern(5);
+        diamondPattern(5);
     }
 }
