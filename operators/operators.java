@@ -1,7 +1,8 @@
 package operators;
-public class operators {
-        public static void main(String[] args) {
-        
+
+public class Operators {
+    public static void main(String[] args) {
+
         // Program (i)
         // int x1 = 2, y1 = 5;
         // int exp1_i = (x1 * y1 / x1);
@@ -9,7 +10,7 @@ public class operators {
         // System.out.println(exp1_i + " , " + exp2_i);
         System.out.println("Program (i) output: 5 , 4");
         System.out.println("-----------------------");
-        
+
         // Program (ii)
         // int x2 = 200, y2 = 50, z2 = 100;
         // if(x2 > y2 && y2 > z2){ System.out.println("Hello"); }
@@ -31,7 +32,8 @@ public class operators {
         // Program (iv)
         // int x4 = 9, y4 = 12;
         // int a = 2, b = 4, c = 6;
-        // int exp4 = 4/3 * (x4 + 34) + 9 * (a + b * c) + (3 + y4 * (2 + a)) / (a + b*y4);
+        // int exp4 = 4/3 * (x4 + 34) + 9 * (a + b * c) + (3 + y4 * (2 + a)) / (a +
+        // b*y4);
         // System.out.println(exp4);
         System.out.println("Program (iv) output: 278");
         System.out.println("-----------------------");

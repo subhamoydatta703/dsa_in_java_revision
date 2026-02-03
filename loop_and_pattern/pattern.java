@@ -1,5 +1,6 @@
 package loop_and_pattern;
-public class pattern {
+
+public class Pattern {
 
     // star print
     static void star(int n) {
@@ -165,31 +166,31 @@ public class pattern {
 
     // diamond pattern
 
-    static void diamondPattern(int n){
+    static void diamondPattern(int n) {
         // lines
-        for(int i =1; i<=n; i++){
+        for (int i = 1; i <= n; i++) {
             // space
-            for(int j = 1; j<=(n-i); j++){
+            for (int j = 1; j <= (n - i); j++) {
                 System.out.print(" ");
             }
             // star
-            for(int k = 1; k<=((2*i)-1); k++){
+            for (int k = 1; k <= ((2 * i) - 1); k++) {
                 System.out.print("*");
             }
-            
+
             System.out.println();
         }
         // lines
-        for(int i =n; i>=1; i--){
+        for (int i = n; i >= 1; i--) {
             // space
-            for(int j = 1; j<=(n-i); j++){
+            for (int j = 1; j <= (n - i); j++) {
                 System.out.print(" ");
             }
             // star
-            for(int k = 1; k<=((2*i)-1); k++){
+            for (int k = 1; k <= ((2 * i) - 1); k++) {
                 System.out.print("*");
             }
-            
+
             System.out.println();
         }
     }

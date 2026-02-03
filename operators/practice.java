@@ -1,5 +1,6 @@
 package operators;
-public class practice {
+
+public class Practice {
     // Method overloading
 
     static int sum(int x, int y, int z) {
@@ -57,7 +58,6 @@ public class practice {
         // avg(3, 5, 4);
         // palindrome(121);
         // System.out.print(sum(5, 7, 3));
-
 
     }
 }
