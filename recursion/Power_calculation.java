@@ -12,7 +12,8 @@ public class Power_calculation {
     static int optPower(int x, int n) {
         if (n == 0)
             return 1;
-        int halfPow = optPower(x, n / 2) * optPower(x, n / 2);
+        int halfVal = optPower(x, n / 2);
+        int halfPow = halfVal * halfVal;
 
         if (n % 2 != 0) {
             halfPow = x * halfPow;
