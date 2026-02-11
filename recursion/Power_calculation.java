@@ -22,8 +22,24 @@ public class Power_calculation {
         return halfPow;
     }
 
+    // method 3(handling negative powers also)
+    static double pow(double x, int n){
+    if(n == 0) return 1;
+
+    double half = pow(x, n/2);
+
+    if(n % 2 == 0)
+        return half * half;
+    else if(n > 0)
+        return x * half * half;
+    else
+        return (half * half) / x;
+}
+
+
     public static void main(String[] args) {
         // System.out.println(power(2, 3));
-        System.out.println(optPower(2, 5));
+        // System.out.println(optPower(2, 5));
+        System.out.println(pow(2, -1));
     }
 }
