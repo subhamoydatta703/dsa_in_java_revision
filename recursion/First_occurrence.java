@@ -4,13 +4,11 @@ public class First_occurrence {
     // first occurrence of an element in an array
     // method 1
     static void firstOcc(int[] arr, int i, int k) {
-        boolean find = false;
         if (i == (arr.length)) {
             System.out.println("Not find");
             return;
         }
         if (arr[i] == k) {
-            find = true;
             System.out.println("Find at index: " + i);
             return;
         }
@@ -28,9 +26,9 @@ public class First_occurrence {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5 };
+        int[] arr = { 1, 2, 3, 4, 5, 2, 2, 7 };
         // firstOcc(arr, 0, 7);
-        int res = firstOcc2(arr, 0, 4);
+        int res = firstOcc2(arr, 0, 2);
         if (res == -1)
             System.out.println("Not find");
         else
