@@ -51,6 +51,28 @@ public class Recursion_Array {
 
     }
 
+    // Recutsive rotated binary search
+    static int rotatedBinarySearch(int[] arr, int target, int s, int e) {
+        if (s > e)
+            return -1;
+        int mid = s + (e - s) / 2;
+        if (arr[mid] == target)
+            return mid;
+        if (arr[s] <= arr[mid]) {
+            if (target >= arr[s] && target <= arr[mid]) {
+                return rotatedBinarySearch(arr, target, s, mid - 1);
+            } else {
+                return rotatedBinarySearch(arr, target, mid + 1, e);
+            }
+        } else {
+            if (target >= arr[mid] && target <= arr[e]) {
+                return rotatedBinarySearch(arr, target, mid + 1, e);
+            } else {
+                return rotatedBinarySearch(arr, target, s, mid - 1);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 5, 3, 2, 7, 8, 2, 9, 10, 15, 2, 25 };
         // System.out.println(isSorted(arr, 0));
@@ -61,7 +83,8 @@ public class Recursion_Array {
         // System.out.println("Not Found");
         // else
         // System.out.println("Found at index: " + val);
-        System.out.println(multipleSearch(arr, 0, 2));
+        // System.out.println(multipleSearch(arr, 0, 2));
+        System.out.println(rotatedBinarySearch(arr, 9, 0, arr.length - 1));
 
     }
 }
